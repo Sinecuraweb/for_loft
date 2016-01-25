@@ -1,0 +1,51 @@
+body, html{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+
+}
+
+ul{
+    margin:0 auto;
+    padding: 0;
+}
+* {
+  margin: 0;
+  box-sizing:border-box;
+}
+
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url("../i/bg_all.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+
+
+}
+
+.empty{
+	height: 61px;
+}
+
+.container{
+	width: 960px;
+	margin:0 auto;
+
+}
+
+.container-header{
+	width: 1200px;
+}
+
+.clearfix:before, .clearfix:after{
+	content:" ";
+	display: table;
+}
+
+.clearfix:after{
+	clear:both;
+}

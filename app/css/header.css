@@ -1,0 +1,80 @@
+.header{
+    background-image:url("../i/bg-header.png");
+   
+    height: 97px;
+    width: 100%;
+    /*background-image: -moz-linear-gradient( 90deg, rgb(137,180,58) 0%, rgb(177,214,87) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(137,180,58) 0%, rgb(177,214,87) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(137,180,58) 0%, rgb(177,214,87) 100%);*/
+
+
+}
+
+.logo{
+    margin-left: 9px;
+    margin-top: 10px;
+    display: inline-block;
+    
+}
+
+.socials{
+    /*display: inline-block;*/
+    padding-top: 26px;
+    list-style: none;
+    float: right;
+}
+
+.socials-item{
+    display: inline-block;
+    margin-left: 8px;
+
+}
+
+
+.ico {
+    background-image: url("../i/spritesheet.png");
+    background-repeat: no-repeat;
+    display:block;
+}
+
+.ico-fb {
+    width: 42px;
+    height: 44px;
+    background-position: -5px -5px;
+}
+
+.ico-fb:hover {
+    background-position: -57px -5px;
+}
+
+.ico-git {
+    width: 42px;
+    height: 44px;
+    background-position: -5px -59px;
+}
+
+.ico-git:hover {
+    background-position: -57px -59px;
+}
+
+.ico-tw {
+    width: 42px;
+    height: 44px;
+    background-position: -109px -5px;
+}
+
+.ico-tw:hover {
+    background-position: -109px -59px;
+}
+
+.ico-vk {
+    width: 42px;
+    height: 44px;
+    background-position: -5px -113px;
+}
+
+.ico-vk:hover {
+    background-position: -57px -113px;
+}
+
+

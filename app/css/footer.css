@@ -1,0 +1,42 @@
+.footer{
+  height: 61px;
+  background-color: #F3F3F3;
+  position: relative;
+  margin-top:-61px;
+}
+
+.copy{
+    text-align: center;
+    font-family: 'Arial Narrow', arial;
+    font-size: 13px;
+    color:#5a636b;
+    padding-top: 33px;
+
+       
+}
+
+
+/*.wrapper-footer{
+    background-color: #eff3f7;
+    width: 100%;
+    margin-top: 39px;
+    
+    
+}
+
+
+
+.page-wrap {
+  min-height: 100%;
+   equal to footer height 
+  margin-bottom: -79px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.wrapper-footer, .page-wrap:after {
+  height: 79px; 
+}*/
