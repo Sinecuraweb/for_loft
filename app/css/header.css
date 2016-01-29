@@ -1,6 +1,6 @@
 .header{
     background-image:url("../i/bg-header.png");
-   
+    margin-bottom:26px;
     height: 97px;
     width: 100%;
     /*background-image: -moz-linear-gradient( 90deg, rgb(137,180,58) 0%, rgb(177,214,87) 100%);

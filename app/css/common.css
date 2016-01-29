@@ -38,7 +38,11 @@ ul{
 }
 
 .container-header{
-	width: 1200px;
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
 }
 
 .clearfix:before, .clearfix:after{
@@ -48,4 +52,22 @@ ul{
 
 .clearfix:after{
 	clear:both;
+}
+
+.text-left{
+	float:left;
+}
+
+.text-right{
+	float:right;
+}
+
+.text-full{
+	width: 100% !important;
+
+}
+fieldset{
+	border:none !important;
+	padding: 0 !important;
+	margin:0 auto;
 }

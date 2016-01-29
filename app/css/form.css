@@ -1,0 +1,117 @@
+.main-form{
+	width: 410px;
+	margin:0 auto;
+
+}
+
+.main-form__item{
+	display: inline-block;
+    width: 190px;
+    text-align: center;
+    margin-bottom: 12px;
+    vertical-align: top;
+    position: relative;
+}
+.main-form__item-title{
+	color: #727070;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+.main-form_input{
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(214, 213, 211);
+  border-radius: 3px;
+  background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  width: 190px;
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+  font-family: 'Open-Sans-ligth',sans-serif;
+  font-size:12px;
+  outline-color: coral;
+}
+.main-form_textarea{
+	width: 100%;
+	padding-bottom: 180px;
+
+}
+
+#name::-webkit-input-placeholder {
+ color:#c7c6c6;
+}
+
+#email::-webkit-input-placeholder {
+ color:#c7c6c6;
+}
+#textarea::-webkit-input-placeholder {
+ color:#c7c6c6;
+
+}
+
+/*Капча*/
+
+.captcha{
+	display: block;
+}
+
+.main-form_input-code{
+	padding-bottom: 7px;
+	padding-top: 7px;
+}
+.normal-text_captcha{
+	margin-bottom:10px;
+}
+
+.wrapper-button{
+	display: inline-block;
+}
+.btn{
+  margin: 0 auto;
+  border-width: 1px;
+  padding: 7px 21px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Open-Sans-Semibold-regular',sans-serif;
+  color: rgb(30, 116, 101);
+  line-height: 1.571;
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+.btn-submit{
+  /*color: rgb(30, 116, 101);*/
+  background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+}
+
+.btn-submit:hover {
+  cursor:-webkit-grabbing;
+  background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+
+.btn-reset{
+  background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  
+}
+
+.btn-reset:hover {
+  cursor:-webkit-grabbing;
+  cursor: pointer;
+  background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+}
