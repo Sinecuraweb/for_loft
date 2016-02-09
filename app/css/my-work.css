@@ -13,10 +13,13 @@
   margin-left: 33px;
   position: relative;
   border:1px solid #c2c2c2;
+  border-top:1px solid #ababab;
   margin-bottom:49px;
   vertical-align: top;
-
-
+  background-image: -moz-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 }
 
 /*Эффект*/
@@ -66,7 +69,7 @@
 
 }
 
-.mya-worl-description{
+.my-work-description{
    padding-bottom: 10px;
 }
 .my-work-description__title{
@@ -95,4 +98,84 @@
   padding-right: 2px;
 }
 
+
+.my-work_add-project{
+  padding:25px 20px 25px 20px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.icon-add-project{
+  float: none;
+}
+
+
+
+
+
+
+/*POPUP*/
+
+.popup-wrapper{
+  display:none;
+}
+
+.popup_title{
+    color:#727070;
+    font-family: 'Open-Sans-ligth',sans-serif;
+    font-size: 12px;
+    display: block;
+    margin-left:14px;
+    margin-bottom:6px;
+
+
+
+}
+
+.popup_body{
+    border-radius: 5px;
+    background-color: #f3f2f1;
+    padding-left:24px;
+    padding-right:24px;
+    padding-bottom:26px;
+    padding-top:23px;
+
+
+}
+
+.form_item-header{
+    font-family: 'open_sans_regular',sans-serif;
+    color:#727070;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.form_item-new-project{
+    border:1px solid #e0ac98;
+    border-radius: 5px;
+    width:320px;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-family: 'Open-Sans-ligth',sans-serif;
+    font-size:12px;
+    outline-color: coral;
+
+}
+
+.form_item-img-load{
+    background-image: url("../i/img_load.png");
+    background-position: 90% 50%;
+    background-repeat:no-repeat;
+}
+
+.form_item-description{
+    padding-bottom:85px;
+}
+
+.form_item{
+    margin-bottom:7px;
+}
+/*ADD-PROJECT*/
 

@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'open_sansbold_italic';
-    src: url('opensans-bolditalic-webfont.eot');
-    src: url('opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url("opensans-bolditalic-webfont.eot");
+    src: url("opensans-bolditalic-webfont.eot?#iefix") format('embedded-opentype'),
          url('opensans-bolditalic-webfont.woff2') format('woff2'),
          url('opensans-bolditalic-webfont.woff') format('woff'),
          url('opensans-bolditalic-webfont.ttf') format('truetype'),

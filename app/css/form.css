@@ -20,7 +20,7 @@
     text-align: left;
 }
 
-.main-form_input{
+.form_item-new-project{
   border-width: 1px;
   border-style: solid;
   border-color: rgb(214, 213, 211);
@@ -29,10 +29,10 @@
   background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-  width: 190px;
+  width: 320px;
   display: block;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 10px;
   font-family: 'Open-Sans-ligth',sans-serif;
   font-size:12px;
@@ -48,13 +48,14 @@
  color:#c7c6c6;
 }
 
-#email::-webkit-input-placeholder {
+#email, #email-auth, #pass-auth::-webkit-input-placeholder {
  color:#c7c6c6;
 }
 #textarea::-webkit-input-placeholder {
  color:#c7c6c6;
-
 }
+
+
 
 /*Капча*/
 
@@ -115,3 +116,19 @@
   background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 }
+
+
+/*Форма моудульного окна авторизации*/
+
+.main-form_input:before{
+    height: 100%;
+    position: absolute;
+    left: 48px;
+    width: 18px;
+    top: 0;
+    background: url("../i/icon_arrow.png") no-repeat;
+    background-size: contain;
+    content: '';
+
+    
+  }

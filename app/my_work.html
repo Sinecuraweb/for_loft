@@ -13,9 +13,13 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/common.css" rel="stylesheet">
   <link href="fonts/fonts.css" rel="stylesheet">
+  <link href= "css/form.css" rel="stylesheet">
   <link rel="stylesheet" href="css/my-work.css">
+  <!-- Плагины  -->
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
+  <script type ="text/javascript" src ="bower/jquery/dist/jquery.min.js"></script>
+
  <!--  <link rel ="stylesheet" href="">
 -->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -203,20 +207,55 @@
                   </p> 
                 </div>
               </div>
-
+              <!-- Добавить проект -->
               <div class="my-work__item">
-                <div class="my-work-pic">
-                  <img src="img/work1.png" height="119" width="166" alt="work1" class="work-img">
-                  <div class="zoom-wrapper">
-                    <a href="http://a-industry.ru" target="_blank" class="zoom-link">a-industry.ru</a>
+                <a class="my-work_add-project" id ="add-new_item" href="#">                  
+                  <div class="icon-work icon-add-project">
+                    <i class="bg-portfolio"></i>
                   </div>
-                </div>
-                <div class="my-work-description">
-                  <h2 class="my-work-description__title">a-industry.ru</h2> 
-                  <p class="my-work-description__text">
-                    Корпоративный и в тоже время продающий сайт строительной компании
-                  </p> 
-                </div>
+                  <h2 class="my-work-description__title">Добавить проект</h2>   
+                </a>
+              </div>
+
+              <!-- popup -->
+
+              <!--<div id="new-project-popup-1" class="popup-wrapper">-->
+                <!--<p class="popup_title">Авторизуйтесь:</p>-->
+                <!--<div class="popup_body">-->
+                  <!--<div class="form_item">-->
+                    <!--<input type ="email" name ="email" class="main-form_input" id ="mail-auth" placeholder="Введите Email" >-->
+                  <!--</div>-->
+
+                  <!--<div class="form_item">-->
+                    <!--<input type ="password" name ="email" class="main-form_input" id ="pass" placeholder="Введите пароль">-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+
+              <div id="new-project-popup" class="popup-wrapper">
+                <p class="popup_title">Добавление проекта</p>
+                <form class="popup_body" id="add-new-project">
+                  <div class="form_item">
+                    <h4 class="form_item-header">Название проекта</h4>
+                    <input type ="text" name ="text" class="form_item-new-project" id ="mail-auth" placeholder="Введите название" >
+                  </div>
+                  <div class="form_item">
+                    <h4 class="form_item-header">Картинка проекта</h4>
+                    <input type ="text" name ="text" class="form_item-new-project" id ="mail-auth" placeholder="Загрузите изображение" >
+                  </div>
+                  <div class="form_item">
+                    <h4 class="form_item-header">URL проекта </h4>
+                    <input type ="text" name ="text" class="form_item-new-project form_item-img-load" id ="mail-auth" placeholder="Добавьте ссылку" >
+                  </div>
+                  <div class="form_item">
+                    <h4 class="form_item-header">Название проекта</h4>
+                    <input type ="text" name ="text" class="form_item-new-project form_item-description" id ="mail-auth" placeholder="Пара слов о Вашем проекте" >
+                  </div>
+                  <div class="form_item text-center">
+                      <button name="name" type="submit" class="btn btn-submit" >Добавить</button>
+                  </div>
+
+                </form>
               </div>
             </div> 
           </section>
@@ -239,5 +278,8 @@
      <span>&copy; 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
     </div>
   </footer>
+  <script src="bower/bPopup/jquery.bpopup.min.js"></script>
+   <script type="text/javascript" src ="js/addproject.js"></script>
+   <script src="bower/bPopup/jquery.bpopup.min.js"></script>
 </body>
 </html>

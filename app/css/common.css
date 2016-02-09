@@ -62,6 +62,10 @@ ul{
 	float:right;
 }
 
+.text-center{
+	text-align: center;
+}
+
 .text-full{
 	width: 100% !important;
 
