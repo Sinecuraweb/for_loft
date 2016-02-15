@@ -177,5 +177,33 @@
 .form_item{
     margin-bottom:7px;
 }
+
+
+/*Серверные сообщения*/
+.success-mes{
+    background-color:green;
+    border-color:#f97e76;
+    color:#f97e76;
+}
+
+.error-mes{
+    background-color:#fad2d1;
+    border-color:#f97e76;
+    color:#f97e76;
+    
+
+
+}
+
+
+.server-mes{
+  border-radius:4px;
+  border:1px solid;
+  font-size: 12px;
+  width:100%;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  display: none;
+}
 /*ADD-PROJECT*/
 

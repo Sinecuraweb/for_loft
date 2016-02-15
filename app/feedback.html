@@ -15,6 +15,8 @@
   <link href="fonts/fonts.css" rel="stylesheet">
   <link rel="stylesheet" href="css/my-work.css">
   <link rel="stylesheet" href="css/form.css">
+
+
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
 
@@ -153,10 +155,16 @@
                 <label for="name" class="main-form__item-title">
                   <span class="normal-text">Ваше сообщение</span>
                 </label>
-                 <input name="name" type="textarea" id="textarea" class="main-form_input main-form_textarea" placeholder="Кратко опишите проблему/предложение">
+
+
+
+                 <input name="about-problem" type="textarea" id="textarea" class="main-form_input main-form_textarea" placeholder="Кратко опишите проблему/предложение" qtip-content ="Вы не написали о себе и вашей проблеме" qtip-position="right">
                </div>
+
+
+
                <fieldset class="captcha">
-               <p class="normal-text normal-text_captcha">Введите код, указанный на картинке</p>
+               <label class="normal-text normal-text_captcha">Введите код, указанный на картинке</label>
                  <div class="main-form__item text-left">
                   <label for="name" class="main-form__item-title">
                     
@@ -175,7 +183,7 @@
                </div>
                <div class="wrapper-button">
                    <div class="main-form__item text-left">
-                    <button name="name" type="submit" class="btn btn-submit" >Отправить</button>
+                    <button name="name" type="submit" class="btn btn-submit">Отправить</button>
                     </div>
                  <div class="main-form__item text-right">
                     <button name="name" type="reset" class="btn btn-reset" >Очистить</button>
@@ -209,5 +217,10 @@
      <span>&copy; 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
     </div>
   </footer>
+
+  <script type ="text/javascript" src ="bower/jquery/dist/jquery.min.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/contactMe.js"></script>
+    <script src ="app/bower/qtip2/jquery.qtip.min.js"></script>
 </body>
 </html>

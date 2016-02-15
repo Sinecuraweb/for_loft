@@ -15,7 +15,10 @@
   <link href="fonts/fonts.css" rel="stylesheet">
   <link href= "css/form.css" rel="stylesheet">
   <link rel="stylesheet" href="css/my-work.css">
+  <link rel="stylesheet" href="app/bower/qtip2/jquery.qtip.css">
+  
   <!-- Плагины  -->
+
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
   <script type ="text/javascript" src ="bower/jquery/dist/jquery.min.js"></script>
@@ -235,9 +238,11 @@
               <div id="new-project-popup" class="popup-wrapper">
                 <p class="popup_title">Добавление проекта</p>
                 <form class="popup_body" id="add-new-project">
+                  <div class ="server-mes success-mes"></div>
+                  <div class="error-mes server-mes"></div>
                   <div class="form_item">
-                    <h4 class="form_item-header">Название проекта</h4>
-                    <input type ="text" name ="text" class="form_item-new-project" id ="mail-auth" placeholder="Введите название" >
+                    <label for ="projectName" class="form_item-header">Название проекта</label>
+                    <input id ="projectName" type ="text" name ="projectName" class="form_item-new-project" id ="mail-auth" placeholder="Введите название" qtip-content ="Вы не заполнили название" >
                   </div>
                   <div class="form_item">
                     <h4 class="form_item-header">Картинка проекта</h4>
@@ -278,8 +283,11 @@
      <span>&copy; 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
     </div>
   </footer>
+  <script src ="app/bower/qtip2/jquery.qtip.min.js"></script>
   <script src="bower/bPopup/jquery.bpopup.min.js"></script>
    <script type="text/javascript" src ="js/addproject.js"></script>
    <script src="bower/bPopup/jquery.bpopup.min.js"></script>
+   <script src ="js/validation.js"></script>
+ 
 </body>
 </html>
