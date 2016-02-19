@@ -1,5 +1,5 @@
 var validation;
-validation = function () {
+validation = (function () {
 
 //Инициализируем наш модуль
 	var init = function () {
@@ -10,6 +10,7 @@ validation = function () {
 	var _setUpListners = function () {
 		$('form').on('keydown', 'has-error', _removeError);
 		$('form').on('reset', _clearForm);
+		$('form').on('submit',_validateForm);
 	};
 
 
@@ -27,7 +28,7 @@ validation = function () {
 	};
 
 	//Создаем тултипы
-	var _createQtip = function (elementm, position) {
+	var _createQtip = function (element, position) {
 
 
 		//Позиция тултипа
@@ -82,19 +83,20 @@ validation = function () {
 
 	};
 
-	var validateForm = function (form) {
-		var elements = form.find('input, textarea').not('input[type="file", input[type="hidden"]'),
+	var _validateForm = function () {
+		var form = $('form');
+			elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
 			valid = true;
-		console.log('я в домикеы')
+		console.log('я в домике');
 
 
 		// Проходим по все элементам форма
 		$.each(elements, function (index, val) {
-			var element = $(value),
+			var element = $(val),
 				val = element.val(),
 				pos = element.attr('qtip-position');
 
-			if (vl.length === 0) {
+			if (val.length === 0) {
 				element.addClass('has-error');
 				_createQtip(element, pos);
 				valid = false;
@@ -102,10 +104,11 @@ validation = function () {
 
 		});
 		return valid;
-	};
+	}
 
 	return {
-		init: init,
-		validateForm: validateForm
+		init: init
 	};
-}
+})();
+
+validation.init();
